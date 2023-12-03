@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="440.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatui.ChatController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="70.0">
+         <padding>
+            <Insets right="-12.0" />
+         </padding>
+         <content>
+            <FlowPane alignment="TOP_RIGHT" hgap="12.0" prefHeight="760.0" prefWidth="416.0" rowValignment="TOP" vgap="6.0">
+               <children>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Chuyện anh nhờ chú mày đến đâu rồi?" AnchorPane.rightAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="sendMessage" />
+                              <String fx:value="singleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" textAlignment="RIGHT" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="5.0">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@hacker.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="1.0" right="1.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <styleClass>
+                              <String fx:value="transparentBg" />
+                              <String fx:value="hoverCursor" />
+                           </styleClass>
+                        </Button>
+                        <Label text="Hack nick fb người yêu cũ anh ấy ạ?" AnchorPane.leftAnchor="40.0">
+                           <styleClass>
+                              <String fx:value="receivedMessage" />
+                              <String fx:value="singleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Đúng rồi, xong chưa?" AnchorPane.rightAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="sendMessage" />
+                              <String fx:value="singleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Em đang cố anh ạ" AnchorPane.leftAnchor="40.0">
+                           <styleClass>
+                              <String fx:value="receivedMessage" />
+                              <String fx:value="firstMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Ca này căng phết, bảo mật 2 lớp" AnchorPane.leftAnchor="40.0">
+                           <styleClass>
+                              <String fx:value="receivedMessage" />
+                              <String fx:value="midleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" textAlignment="RIGHT" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="5.0">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@hacker.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="1.0" right="1.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <styleClass>
+                              <String fx:value="transparentBg" />
+                              <String fx:value="hoverCursor" />
+                           </styleClass>
+                        </Button>
+                        <Label text="Chắc anh phải tăng ngân sách đấy" AnchorPane.leftAnchor="40.0">
+                           <styleClass>
+                              <String fx:value="receivedMessage" />
+                              <String fx:value="lastMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Ok" AnchorPane.rightAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="sendMessage" />
+                              <String fx:value="firstMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Chỉ cần chú mày làm được thì ngân sách bao nhiêu anh cũng chi" wrapText="true" AnchorPane.rightAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="sendMessage" />
+                              <String fx:value="midleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Đang là 500k phải không?" AnchorPane.rightAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="sendMessage" />
+                              <String fx:value="midleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Tăng lên 510k nhé!" AnchorPane.rightAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="sendMessage" />
+                              <String fx:value="lastMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Ui anh ơi anh làm thế mất uy tín quá" AnchorPane.leftAnchor="40.0">
+                           <styleClass>
+                              <String fx:value="receivedMessage" />
+                              <String fx:value="firstMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Thế này sao lần sau em dám làm cho anh nữa!" wrapText="true" AnchorPane.leftAnchor="40.0">
+                           <styleClass>
+                              <String fx:value="receivedMessage" />
+                              <String fx:value="midleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" textAlignment="RIGHT" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="5.0">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@hacker.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="1.0" right="1.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <styleClass>
+                              <String fx:value="transparentBg" />
+                              <String fx:value="hoverCursor" />
+                           </styleClass>
+                        </Button>
+                        <Label text="Anh xem thế nào đi chứ như thế không được đâu anh ơi" AnchorPane.leftAnchor="40.0">
+                           <styleClass>
+                              <String fx:value="receivedMessage" />
+                              <String fx:value="lastMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Thế chú muốn bao nhiêu?" AnchorPane.rightAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="sendMessage" />
+                              <String fx:value="singleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" textAlignment="RIGHT" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="5.0">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@hacker.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="1.0" right="1.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <styleClass>
+                              <String fx:value="transparentBg" />
+                              <String fx:value="hoverCursor" />
+                           </styleClass>
+                        </Button>
+                        <Label text="Phải củ rưỡi anh ơi!" AnchorPane.leftAnchor="40.0">
+                           <styleClass>
+                              <String fx:value="receivedMessage" />
+                              <String fx:value="singleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Đắt thế, 900k thôi" AnchorPane.rightAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="sendMessage" />
+                              <String fx:value="singleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" textAlignment="RIGHT" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="5.0">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@hacker.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="1.0" right="1.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <styleClass>
+                              <String fx:value="transparentBg" />
+                              <String fx:value="hoverCursor" />
+                           </styleClass>
+                        </Button>
+                        <Label text="Anh làm thế mà coi được à?" AnchorPane.leftAnchor="40.0">
+                           <styleClass>
+                              <String fx:value="receivedMessage" />
+                              <String fx:value="singleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Thế có làm không?" AnchorPane.rightAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="sendMessage" />
+                              <String fx:value="singleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" mnemonicParsing="false" textAlignment="RIGHT" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="5.0">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@hacker.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="1.0" right="1.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <styleClass>
+                              <String fx:value="transparentBg" />
+                              <String fx:value="hoverCursor" />
+                           </styleClass>
+                        </Button>
+                        <Label text="Thôi được rồi, đây sẽ là lần cuối em làm cho anh!" AnchorPane.leftAnchor="40.0">
+                           <styleClass>
+                              <String fx:value="receivedMessage" />
+                              <String fx:value="singleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefWidth="416.0">
+                     <children>
+                        <Label text="Tuỳ chú thôi!" AnchorPane.rightAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="sendMessage" />
+                              <String fx:value="singleMessage" />
+                           </styleClass>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </FlowPane>
+         </content>
+      </ScrollPane>
+      <AnchorPane layoutX="91.0" layoutY="-80.0" prefHeight="70.0" styleClass="header" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button alignment="BASELINE_LEFT" layoutX="53.0" layoutY="23.0" mnemonicParsing="false" prefWidth="150.0" text="  Hacker Lỏ" textAlignment="RIGHT" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="15.0">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@hacker.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="1.0" right="1.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="transparentBg" />
+                  <String fx:value="hoverCursor" />
+               </styleClass>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="63.0" layoutY="33.0" mnemonicParsing="false" textAlignment="RIGHT" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="20.0">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@backIcon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="1.0" right="1.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="transparentBg" />
+                  <String fx:value="hoverCursor" />
+               </styleClass>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="376.0" layoutY="23.0" mnemonicParsing="false" textAlignment="RIGHT" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="1.0" right="1.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="transparentBg" />
+                  <String fx:value="hoverCursor" />
+               </styleClass>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@video.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="327.0" layoutY="23.0" mnemonicParsing="false" textAlignment="RIGHT" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="20.0">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@phone.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="1.0" right="1.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <styleClass>
+                  <String fx:value="transparentBg" />
+                  <String fx:value="hoverCursor" />
+               </styleClass>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="71.0" layoutY="840.0" prefHeight="70.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="66.0" layoutY="-15.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@plus.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="1.0" right="1.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <styleClass>
+                        <String fx:value="transparentBg" />
+                        <String fx:value="hoverCursor" />
+                     </styleClass>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@camera.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="1.0" right="1.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <styleClass>
+                        <String fx:value="transparentBg" />
+                        <String fx:value="hoverCursor" />
+                     </styleClass>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="1.0" right="1.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <styleClass>
+                        <String fx:value="transparentBg" />
+                        <String fx:value="hoverCursor" />
+                     </styleClass>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@microphone.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="1.0" right="1.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <styleClass>
+                        <String fx:value="transparentBg" />
+                        <String fx:value="hoverCursor" />
+                     </styleClass>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="30.0" prefWidth="194.0" textAlignment="RIGHT">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="1.0" right="5.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <styleClass>
+                        <String fx:value="transparentBg" />
+                        <String fx:value="hoverCursor" />
+                        <String fx:value="chatFieldButton" />
+                     </styleClass>
+                     <graphic>
+                        <HBox alignment="CENTER" fillHeight="false" prefHeight="26.0" prefWidth="148.0">
+                           <children>
+                              <TextField prefHeight="35.0" promptText="Aa" styleClass="transparentBg">
+                                 <font>
+                                    <Font name="Arial" size="16.0" />
+                                 </font>
+                              </TextField>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@laugh.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </graphic>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@like.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="1.0" right="1.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <styleClass>
+                        <String fx:value="transparentBg" />
+                        <String fx:value="hoverCursor" />
+                     </styleClass>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="12.0" left="12.0" right="12.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
